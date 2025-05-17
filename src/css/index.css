@@ -1,0 +1,78 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  height: 100vh;
+  overflow: hidden;
+  /* background: url(../img/river.png) no-repeat center center fixed; */
+  display: flex;
+  align-items: center;
+}
+main {
+  display: flex;
+  margin: auto;
+  width: 60%;
+  height: 90vh;
+  overflow: auto;
+  overflow-y: scroll;
+  padding: 0 20px;
+  scroll-behavior: smooth;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  background: #ffffff7d;
+}
+
+main::-webkit-scrollbar {
+  display: none;
+}
+
+main > section {
+  width: 75%;
+}
+main > section section {
+  height: 100%;
+  padding-top: 30px;
+}
+
+main > aside {
+  /* width: 20%; */
+  height: 80%;
+  position: fixed;
+  right: 20%;
+  top: 10%;
+}
+
+main > aside nav {
+  width: 100%;
+  height: 100%;
+}
+
+main > aside nav ul {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+main > aside nav ul li a {
+  /* background-color: #f5ecd5; */
+  padding: 20px 20px;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  display: block;
+  width: 100%;
+  color: #727272;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+
+nav ul li a.active {
+  transition: 0.5s;
+  background-color: #bfd6c7;
+  color: #fff;
+  font-weight: bold;
+  border-right: 1px solid #ccc;
+}

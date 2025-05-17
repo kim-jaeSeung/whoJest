@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "target": "es2016",
+    "module": "ESNext",
+    "outDir": "./dist", // 빌드 결과물이 저장될 디렉토리
+    "rootDir": "./src", // 소스 파일이 위치한 디렉토리
+    "moduleResolution": "node",
+    "allowJs": true,
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "strict": true
+  }
+}
