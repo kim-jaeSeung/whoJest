@@ -23,4 +23,3 @@ async function apiFunc<T>(
 }
 
 export default apiFunc;
-//
